@@ -7,8 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
     <title>Password Generator</title>
+    <!-- <script src="https://unpkg.com/axios/dist/axios.min.js"></script> -->
     <link rel="stylesheet" href="styles.css" />
-    <script src="scripts.js " defer></script>
+    <script src="./js/main.js " type="module" defer></script>
     <script>
       
     </script>
@@ -22,8 +23,8 @@
   <select id="passwordType">
     <option value="" disabled selected hidden>Choose a type of password</option>
     <option value="characters">Random Password</option>
-    <!-- <option value="words">Word-Based Password</option>
-    <option value="pin">PIN</option> -->
+    <option value="words">Word-Based Password</option>
+    <!-- <option value="pin">PIN</option> -->
   </select>
 
   <div class="container">
@@ -39,13 +40,13 @@
     <div id="settings">
       <div id="charactersSettings">
         <label>Password Length</label>
-        <input type="number" name="length" value="4" min="4" max="99" id="charLength" />
+        <input type="number" name="length" value="15" min="8" max="99" id="charLength" />
         <br><br>
         <label>Include UpperCase letters</label>
-        <input type="checkbox" name="uppercase" id="charUppercase" checked />
+        <input type="checkbox" name="upper" id="charUppercase" checked />
         <br><br>
         <label>Include LowerCase letters</label>
-        <input type="checkbox" name="lowercase" id="charLowercase" checked />
+        <input type="checkbox" name="lower" id="charLowercase" checked />
         <br><br>
         <label>Include numbers</label>
         <input type="checkbox" name="number" id="charNumbers" checked />
@@ -56,22 +57,24 @@
   
       <div id="wordsSettings">
         <label>How many words?</label>
-        <input type="number" name="length" value="4" min="4" max="24" id="length" />
-        <br><br>
-        <label>How many numbers?</label>
-        <input type="number" name="length" value="4" min="4" id="length" />
+        <input type="number" name="wordlength" value="5" min="1" max="24" id="wordlength" />
+        <!-- * Need to figure out how to incorporate these -->
+        <!--<br><br>
+        <label>How large of numbers?</label>
+        <input type="number" name="numberlength" value="3" min="3" id="wordnumberlength" />
         <br><br>
         <label>Include UpperCase letters?</label>
-        <input type="checkbox" name="uppercase" id="uppercase" checked />
+        <input type="checkbox" name="uppercase" id="worduppercase" checked />
         <br><br>
         <label>Include LowerCase letters?</label>
-        <input type="checkbox" name="lowercase" id="lowercase" checked />
+        <input type="checkbox" name="lowercase" id="wordlowercase" checked /> -->
+        <!-- because I'm making this portion a password using legible words and numbers I dont think it makes sense to include symbols and the numbers should be addressed in the second input so ok to remove down here -->
         <br><br>
         <label>Include numbers?</label>
-        <input type="checkbox" name="number" id="number" checked />
+        <input type="checkbox" name="lgnumber" id="wordnumber" checked />
         <br><br>
         <label>Include symbols?</label>
-        <input type="checkbox" name="symbol" id="symbol" checked />
+        <input type="checkbox" name="symbol" id="wordsymbol" checked />
       </div>
   
       <div id="pinSettings"></div>
