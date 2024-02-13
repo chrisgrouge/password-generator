@@ -1,0 +1,49 @@
+#passwordInput:focus + div > #passwordDisplay {
+  outline: 3px solid #0572ec;
+}
+.pg__action-button {
+  width: 2rem;
+  height: 2rem;
+  font-size: 2rem;
+}
+
+.pg__icon-font__regenerate::before {
+  font-family: pg-icons !important;
+  content: "\ea61";
+}
+
+.pg__icon-font__copy::before {
+  font-family: pg-icons !important;
+  content: "\ea63";
+}
+.pg__icon-font__select-arrow {
+  width: 1rem;
+  height: 1rem;
+  font-size: 1rem;
+}
+.pg__icon-font__select-arrow::before {
+  font-family: pg-icons !important;
+  content: "\ea62";
+}
+
+.pg__additional-controls__checkbox + label:before {
+  background: #f5f5f5;
+  color: #0572ec;
+  border-radius: 6px;
+  content: "";
+  display: block;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+.pg__additional-controls__checkbox:checked + label:before {
+  font-family: pg-icons !important;
+  content: "\ea60";
+}

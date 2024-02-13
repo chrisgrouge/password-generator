@@ -1,0 +1,51 @@
+@font-face {
+  font-display: swap;
+  font-family: Averta OP Regular;
+  font-style: normal;
+  font-weight: 400;
+  src: url('./assets/fonts/averta-op-regular-v1.woff2') format("woff2"),url('./assets/fonts/averta-op-regular-v1.woff') format("woff")
+}
+
+@font-face {
+  font-display: swap;
+  font-family: Averta OP Bold;
+  font-style: normal;
+  font-weight: 400;
+  src: url('./assets/fonts/averta-op-bold-v1.woff2') format("woff2"),url('./assets/fonts/averta-op-bold-v1.woff') format("woff")
+}
+
+@font-face {
+  font-display: swap;
+  font-family: Courier Prime Bits;
+  font-style: normal;
+  font-weight: 400;
+  src: url('./assets/fonts/courier-prime-bits-v1.woff2') format("woff2"),url('./assets/fonts/courier-prime-bits-v1.woff') format("woff")
+}
+
+@font-face {
+  font-family: "pg-icons";
+  src: url("./assets/fonts/pg-icons.woff") format("woff"),url("./assets/fonts/pg-icons.woff2") format("woff2");
+}
+:root {
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body {
+  font-family: Averta OP Regular,sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #f5f5f5;
+  background: #0a2d4d;
+
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-height: 100vh;
+}
+
+#root {
+  width: 100%;
+}

@@ -1,0 +1,6 @@
+{
+  "check": 60000,
+  "refresh": 60001,
+  "select-arrow-down": 60002,
+  "copy": 60003
+}

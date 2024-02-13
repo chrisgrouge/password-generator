@@ -1,0 +1,29 @@
+@font-face {
+    font-family: "pg-icons";
+    src: url("./fonts/pg-icons.woff?27f01e2eec518247f80926859b56a896") format("woff"),
+url("./fonts/pg-icons.woff2?27f01e2eec518247f80926859b56a896") format("woff2");
+}
+
+i[class^="icon-"]:before, i[class*=" icon-"]:before {
+    font-family: pg-icons !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-check:before {
+    content: "\ea60";
+}
+.icon-refresh:before {
+    content: "\ea61";
+}
+.icon-select-arrow-down:before {
+    content: "\ea62";
+}
+.icon-copy:before {
+    content: "\ea63";
+}
