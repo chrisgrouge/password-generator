@@ -136,7 +136,7 @@ function App() {
   };
 
   const handlePasswordTypeChange = (selectedValue: Key) => {
-    console.log("selectedValue", selectedValue);
+    setPasswordType(selectedValue as PasswordType);
   }
 
   return (
@@ -213,32 +213,16 @@ function App() {
           <div className="flex flex-row items-start justify-between space-x-8">
             {/* input container for select */}
             <div className="flex flex-col w-full relative mb-8">
-              <label className="font-averta-bold font-normal mb-2" htmlFor="passwordType">Password Type</label>
-              <select
-                className="appearance-none bg-transparent border-2 border-white border-opacity-20 rounded-full text-white text-base leading-6 outline-none w-full px-6 py-2 focus:outline-none focus:ring-2 focus:ring-blue"
-                id="passwordType"
-                aria-label="Password Type"
-                style={{ letterSpacing: '-.01rem' }}
-                value={passwordType}
-                onChange={(event) => setPasswordType(event.target.value as PasswordType)}
-              >
-                <option value="random">Random</option>
-                <option value="easy">Easy to Read</option>
-                <option value="word">Word-based</option>
-                <option value="pin">Pin</option>
-              </select>
-              
-              {/* custom select arrow */}
-              <div className="pg__main-controls__select-arrow pg__icon-font pg__icon-font__select-arrow absolute bottom-4 right-6 flex-none self-start"></div>
-              {/* <SelectDropdown
+              <SelectDropdown
                 label='Password Type'
                 onSelectionChange={handlePasswordTypeChange}
+                selectedKey={passwordType}
               >
-                <SelectOption value={{ type: "random" }}>Random</SelectOption>
-                <SelectOption value={{ type: "easy" }}>Easy to Read</SelectOption>
-                <SelectOption value={{ type: "word" }}>Word-based</SelectOption>
-                <SelectOption value={{ type: "pin" }}>Pin</SelectOption>
-              </SelectDropdown> */}
+                <SelectOption id="random">Random</SelectOption>
+                <SelectOption id="easy">Easy to Read</SelectOption>
+                <SelectOption id="word">Word-based</SelectOption>
+                <SelectOption id="pin">Pin</SelectOption>
+              </SelectDropdown>
             </div>
             {/* input container for slider */}
             <div className="flex flex-col w-full">

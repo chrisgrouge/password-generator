@@ -17,7 +17,7 @@ This is a simple tool to generate icon fonts from a set of SVG files. It utilize
 
 ## TODO
 - Build more component files for the password generator to make App.tsx more readable.
-- Migrate to using react-aria components for accessibility and keyboard navigation support: select, slider (for password length), checkbox (for character types), buttons with icons and popovers (for copy to clipboard and regenerate).
+- Migrate to using react-aria components for accessibility and keyboard navigation support: slider (for password length), checkbox (for character types), buttons with icons and popovers (for copy to clipboard and regenerate).
 - Add a "copied password" notification when a password is copied to the clipboard.
 - Add a message about the word password length when no additional character types are selected.
 - Add the "View Copied Passwords".
